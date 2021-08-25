@@ -1,0 +1,123 @@
+.banner-principal{
+	width: 100%;
+    height: 100vh;
+
+    background-image: url(../../assets/bannerPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    a{
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        margin: 7px 0;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .slayer{
+        width: 100%;
+        height: 100vh;
+
+        background-color: black;
+        position: absolute;
+        z-index: 2;
+        opacity: 0.6;
+    }
+
+    .containerFormulario{
+        width: 400px;
+        height: 410px;
+        background: #42a5f5;
+        position: relative;
+        z-index: 3;
+        border-radius: 5px;
+        border: 6px solid rgba(120,120,120,0.5);
+        background-clip:padding-box;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding-top: 45px;
+            padding-bottom: 45px;
+           
+
+            h2{
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+
+                .cadeado{
+                    position: relative;
+                    top: 5px;
+                }
+            }
+
+            h3{
+                font-size: 18px;
+                font-weight: normal;
+                padding-bottom: 18px;
+            }
+            .input-wraper{
+                width: 100%;
+                padding: 3px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input[type=email],
+                input[type=password],
+                input[type=text]{
+                    width: 65%;
+                    padding: 10px 5px;
+                    border: none;
+                    outline: 0;
+                    border: 2px solid #ccc;
+                    border-radius: 8px;
+                }
+
+                button{
+                    outline: 0;
+                    border: none;
+                    cursor: pointer;
+                    
+                    font-size: 18px;
+
+                    width: 50%;
+                    padding: 8px;
+                    margin-top: 8px;
+
+                    background-color: #0d47a1;
+                    color: white;
+
+                    transition: 1s;
+
+                    &:hover{
+                        background: #10366e;
+                    }
+                }
+
+                span{
+                    padding: 4px 7px;
+                    font-size: 23px;
+                    padding-right: 5px;
+                    background-color: rgb(212, 212, 212);
+                }
+            }
+        }
+    }
+}

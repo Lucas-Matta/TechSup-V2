@@ -1,0 +1,79 @@
+.container2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+
+    background-color: #f8f8f8;
+    border-radius: 5px;
+
+    position: relative;
+    top: 0;
+    left: 0px;
+    padding-bottom: 50px;
+    
+    .form-profile{
+        padding: 35px;
+        label{
+            width: 100%;
+            display: block;
+
+            font-size: 1.4em;
+            margin-bottom: .5em;
+        }
+
+        button{
+            width: 150%;
+            max-width: 600px;
+            height: 35px;
+            border: 0;
+            border-radius: 7px;
+            font-size: 1.3em;
+
+            background-color: #181c2e;
+            color: #fff;
+
+            transition: 0.3s;
+
+            &:hover{
+                filter: brightness(1.5);
+            }
+        }
+        
+        input, textarea, select{
+            width: 150%;
+            max-width: 600px;
+            margin-bottom: 1em;
+            padding: .7em;
+
+            border: 0;
+            outline: 0;
+            border-radius: 5px;
+        }
+    }
+}
+form{
+    .status{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+
+        input[type="radio"]{
+            margin: 15px 0;
+        }
+        input[type="radio"]:not(:first-child){
+            margin: 15px 0;
+            margin-left: 15px;
+        }
+    }
+
+    textarea{
+        width: 100%;
+        min-width: 220px;
+        height: 100px;
+        resize: none;
+        background-color: rgb(190, 190, 190);
+    }
+}

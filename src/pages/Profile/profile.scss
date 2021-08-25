@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+
+    background-color: #f8f8f8;
+    border-radius: 5px;
+
+    position: relative;
+    top: 0;
+    left: 16px;
+    padding-bottom: 50px;
+
+    .form-profile{
+        img{
+            margin-bottom: 1em;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        label.titulo{
+            width: 100%;
+            display: block;
+
+            font-size: 1.4em;
+            margin-bottom: .5em;
+        }
+        
+        button{
+            width: 150%;
+            max-width: 600px;
+            height: 35px;
+            border: 0;
+            border-radius: 7px;
+            font-size: 1.3em;
+
+            background-color: #181c2e;
+            color: #fff;
+
+            transition: 0.3s;
+
+            &:hover{
+                filter: brightness(1.5);
+            }
+        }
+
+        input, textarea, select{
+            width: 150%;
+            max-width: 600px;
+            margin-bottom: 1em;
+            padding: .7em;
+
+            border: 0;
+            outline: 0;
+            border-radius: 5px;
+        }
+
+        input:disabled{
+            cursor: not-allowed;
+            filter: brightness(1.5);
+        }
+    }
+
+    .label-avatar{
+        width: 280px;
+        height: 280px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        cursor: pointer;
+
+        input{
+            display: none;
+        }
+
+        span{
+            position: absolute;
+            margin-left: 110px;
+
+            z-index: 999;
+            opacity: 0.7;
+
+            transition: all 0.5s;
+
+            &:hover{
+                opacity: 1;
+                transform: scale(1.4);
+            }
+        }
+    }
+
+    .sair{
+        padding: 8px 20px;
+        background-color: transparent;
+        border: 2px solid #121212;
+        border-radius: 5px;
+        font-size: 1.5em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
